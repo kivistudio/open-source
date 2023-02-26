@@ -1,0 +1,189 @@
+/* Awesome font by Threedotstype (https://threedotstype.com/product/di-grotesk/) 
+It is not a free font and all rights belong to Threedotstype.
+*/
+@font-face {
+  font-family: 'DiGrotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/DiGrotesk-Regular.woff') format('woff');
+}
+
+body {
+  font-family: "DiGrotesk", serif;
+  color: rgb(37,32,36);
+}
+
+h3 {
+  margin-block-start:2em;
+}
+
+p {
+  margin-block-start: 0;
+}
+/*
+Kivi colours come from WERNER’S NOMENCLATURE OF COLOURS By P. Syme
+Reference: https://www.c82.net/werner/ 
+*/
+
+/*
+Ink black
+*/
+.kivi-black {
+   color: rgb(37,32,36);
+}
+
+/*
+Carmin red
+*/
+.kivi-red {
+    color: #ce536b;
+ }
+
+/*
+Verditter Blue
+*/
+.kivi-green {
+    color: #6fb5a8;
+ }
+
+/*
+Kings Yellow
+*/
+.kivi-yellow {
+    color: #ead665;
+ }
+
+ .white {
+    color: #ffffff;
+ }
+
+ .buttons {
+  right: 30px;
+  left: auto;
+  top: 0px;
+  height: 0px;
+  position: fixed;
+}
+
+ img {
+  max-height: 500px;
+ }
+
+.image-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: [sidebar] 300px [article-start] 1fr [end-article];
+  grid-template-rows: auto;
+  max-width: 1300px;
+}
+
+.sidebar {
+  padding-left: 2em;
+  padding-right: 2em;
+  grid-column-start: 1;
+  background-color: rgba(37,32,36,0.05);
+  font-size: smaller;
+}
+
+.sidebar span  {
+  margin-left: -1em;
+}
+
+.article {
+  padding-left: 4em;
+  grid-column: article-start;
+}
+
+.heading1 {
+  padding-top: 100px;
+  grid-row-start: 1;
+}
+
+.text1 {
+  grid-row-start: 2;
+}
+
+.heading2 {
+  grid-row-start: 3;
+}
+
+.text2 {
+  grid-row-start: 4;
+}
+
+.heading3 {
+  grid-row-start: 5;
+}
+
+.text3 {
+  grid-row-start: 6;
+}
+
+.heading4 {
+  grid-row-start: 7;
+}
+
+.text4 {
+  grid-row-start: 8;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 150px;
+  height:0px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  width: 150px;
+  position: fixed;
+  cursor: pointer;
+  color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "T";
+  color: rgb(37,32,36);
+  text-align: center;
+  line-height: 30px;
+  vertical-align: center;
+  padding: auto;
+  height: 30px;
+  width: 30px;
+  left: 6px;
+  bottom: 10px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  color: #6fb5a8;
+}
+
+input:checked + .slider:before {
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  bottom: 16px;
+  -webkit-transform: translateX(64px);
+  -ms-transform: translateX(64px);
+  transform: translateX(64px);
+}
+
+.slider:before {
+  border-radius: 50%;
+}
