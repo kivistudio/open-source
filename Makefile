@@ -9,6 +9,7 @@ deps:
 release-to-branch:
 	git checkout ${RELEASE_BRANCH}
 	git merge main
+	npm run build
 	git add dist -f
 	git commit -m "Release"
 	git push
