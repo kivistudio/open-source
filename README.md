@@ -1,13 +1,11 @@
-## Template for webpack setup for static js page
+## Simple static js page pushed to Github Pages
+
+It uses https://github.com/kivistudio/webpack-template and adds automatic release to Github Pages.
 
 Basic styled index page that supports styling, images and fonts. The purpose of this repo is to provide
-out of the box javascript project template built on webpack5. Template supports development and release and saves you from reading the whole [wepback documentation](https://webpack.js.org/guides/).
+out-of-the-box javascript project that follows good dev practices.
 
 Last updated: February 2023
-
-Note:
-
-- I have added the fonts to `.gitignore` as they are the property of [Threedotstype](https://threedotstype.com/product/di-grotesk/)
 
 ### What's in the template
 
