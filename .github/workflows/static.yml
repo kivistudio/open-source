@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://kivi-studio.github.io/open-source"
+      url: "https://kivistudio.github.io/open-source"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
